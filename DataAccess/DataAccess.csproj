@@ -33,15 +33,29 @@
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System" />
+        <Reference Include="System.Configuration" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Crud\CrudFactory.cs" />
+        <Compile Include="Dao\SqlDao.cs" />
+        <Compile Include="Dao\SqlOperation.cs" />
+        <Compile Include="Mapper\EntityMapper.cs" />
+        <Compile Include="Mapper\IObjectMapper.cs" />
+        <Compile Include="Mapper\ISqlStatements.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Crud" />
+      <Folder Include="Crud\Custom" />
+      <Folder Include="Mapper\Custom" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Entities\Entities.csproj">
+        <Project>{5a7f1ab2-ff8c-469d-b858-a4466e9fa0d2}</Project>
+        <Name>Entities</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
