@@ -1,0 +1,15 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.idea
+.vs
+
+WEB_APP/Content/bootstrap*
+
+#WEB_APP/Scripts/jquery*
+#WEB_APP/Scripts/bootstrap*
+#WEB_APP/Scripts/popper*
+WEB_APP/Scripts/*
+!WEB_APP/Scripts/app
